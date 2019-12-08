@@ -1,4 +1,4 @@
-### rule
+# process
 - pick one https://leetcode.com/problems/random-one-question/all
 - look the problem, don't see solutions
 - drink
