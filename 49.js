@@ -13,11 +13,11 @@ let groupAnagrams = (strs) => {
 };
 
 let getKey = (str) => {
-    let max = null;
-    let min = null;
+    let bitArray = new Array(26);
     str.split('').forEach((char) => {
-        let code = char.charCodeAt(0);
+        let code = char.charCodeAt(0) - 97;
         if (bitArray[code] == null) bitArray[code] = 1;
         else bitArray[code]++;
     });
     return bitArray.map((v) => {return (v == null) ? 0 : v}).join();
+};
